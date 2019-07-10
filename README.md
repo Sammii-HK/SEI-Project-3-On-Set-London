@@ -1,6 +1,6 @@
 # On Set London – SEI Project 3
 
-[Live Site](*http://onsetlondon.herokuapp.com*)
+[Live Site](*http://onsetlondon.herokuapp.com*): http://onsetlondon.herokuapp.com
 
 ## Timeframe
 6 days
