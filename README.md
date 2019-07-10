@@ -1,6 +1,6 @@
-[githubrepo]: https://github.com/richyarwood/On-Set-London
+# On Set London – SEI Project 3
 
-# On Set London - General Assembly Project
+[Live Site](*http://onsetlondon.herokuapp.com*)
 
 ## Timeframe
 6 days
@@ -23,7 +23,7 @@
 ## Project brief and team
 The brief was to build a full-stack application with a React front-end and noSQL database. The application had to include data schema and a RESTful api framework.
 
-The project was collaboration with [Violeta Paez](https://github.com/vpaez) and [Sam Kellow](https://github.com/Sammii-HK) merging code from a single GitHub repository.
+The project was collaboration with [Violeta Paez](https://github.com/vpaez), [Sam Kellow](https://github.com/Sammii-HK) and [Richard Yarwood](https://github.com/richyarwood) merging code from a single GitHub repository.
 
 The application is deployed via Git on Heroku and can be found here: [On Set London](http://onsetlondon.herokuapp.com)
 
