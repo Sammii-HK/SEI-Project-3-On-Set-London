@@ -1,4 +1,4 @@
-# Title
+# On Set London – SEI Project 3
 
 The aim was to build a full-stack application with a React front-end and noSQL database. The application had to include data schema and a RESTful api framework.
 
