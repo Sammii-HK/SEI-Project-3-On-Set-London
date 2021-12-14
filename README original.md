@@ -1,15 +1,11 @@
-# Title
+# On Set London – SEI Project 3
 
-The aim was to build a full-stack application with a React front-end and noSQL database. The application had to include data schema and a RESTful api framework.
+[Live Site](http://onsetlondon.herokuapp.com): http://onsetlondon.herokuapp.com
 
-## Details
-
-### Timeframe
-
+## Timeframe
 6 days
 
-### Technologies Used
-
+## Technologies, frameworks and packages
 * React
 * Webpack
 * MongoDB/Mongoose
@@ -24,7 +20,14 @@ The aim was to build a full-stack application with a React front-end and noSQL d
 * ReactMapBox-GL
 * OpenCageData - location lookup
 
-### App Overview
+## Project brief and team
+The brief was to build a full-stack application with a React front-end and noSQL database. The application had to include data schema and a RESTful api framework.
+
+The project was collaboration with [Violeta Paez](https://github.com/vpaez), [Sam Kellow](https://github.com/Sammii-HK) and [Richard Yarwood](https://github.com/richyarwood) merging code from a single GitHub repository.
+
+The application is deployed via Git on Heroku and can be found here: [On Set London](http://onsetlondon.herokuapp.com)
+
+### App overview
 
 At project initiation, we soon agreed that we would like to work with MapBox, a service which we had not covered during the course at General Assembly. From this came the idea to emulate Google Maps, but to list movie locations in London.
 
@@ -32,19 +35,19 @@ Our aim was to deliver a single page experience, integrating the ability for a u
 
 ![image](https://user-images.githubusercontent.com/40695746/57919387-a3c91980-7890-11e9-8ce1-8df3f62eeed0.png)
 
-#### Development Process
+#### Development process
 
-The project was collaboration with [Violeta Paez](https://github.com/vpaez), [Sammii Kellow](https://github.com/Sammii-HK) and [Richard Yarwood](https://github.com/richyarwood) merging code from a single GitHub repository.
+We started the build process with a simple wireframe which was turned in to a React prototype. This allowed us to understand the functionality of MapBox.
 
-The application is deployed via Git on Heroku and can be found here: [On Set London](http://onsetlondon.herokuapp.com)
+From this we formed the data schema and mapped out the components.
 
-#### Functionality
+Work was allocated is a way to avoid code conflicts on merge and each developer worked on feature branches which we merged in to development. The GitHub repository owner pushed clean code from development, to master and then to Heroku.
 
-##### Home.js component - the 'powerhouse parent'
+#### Home.js component - the 'powerhouse parent'
 
 The Home.js component is the parent of the other main components and sets the initial map coordinate state and passed this state and functions down to the children. In this manner we are able to minimise the number of api calls.
 
-```javascript
+```
 constructor(){
   super()
 
@@ -86,7 +89,7 @@ We wanted to allow a user to add a scene note to a current film or add a new fil
 
 A switch statement is used to collect the data in the relevant state:
 
-```javascript
+```
 handleChange(e){
   let location = this.state.location
   let sceneNotes = []
@@ -108,7 +111,7 @@ handleChange(e){
 
 On submit, OpenCageData is called to forward lookup the location address and return the correct latitude and longitude. Once this state is updated, the form data is submitted to both the Location and Film models.
 
-```javascript
+```
 handleSubmit(e) {
   console.log(this.state.location)
   e.preventDefault()
@@ -155,20 +158,19 @@ handleSubmit(e) {
 
 This process was one of our biggest challenges during the project.
 
-##### Scrolling the Location Index and map focus
+#### Scrolling the Location Index and map focus
 
 Clicking a location in the sidebar re-centres the map to that marker and also displays the films and scene notes within the sidebar.
 
 Clicking a pop-up card scrolls the location in to view in the sidebar using this function:
 
-```javascript
+```
 scrollLocationOnMarkerClick(){
   document.getElementById(this.state.activeLocation._id)
     .scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 ```
-
-##### Responsive design
+#### Responsive design
 
 We decided that having a good mobile experience was particularly important for this app as it's use would be one the move, walking round London visiting the locations.
 
@@ -176,11 +178,6 @@ Media queries are used to adjust the experience.
 
 ![image](https://user-images.githubusercontent.com/40695746/57921117-80a06900-7894-11e9-9342-bc50e9122d93.png)
 
-### Challenges & Achievements
-
-Having to apply form data input to search the OpenCageData API locations, to return lat and long co-ordinates for location name supplied. Once co-ordinates are retrieved, they are amended to the location form data on state and submitted to our API.
-
-## Future enhancements
-
+### Future enhancements
 * Adding a lookup to the film database OMDB to populate new film images and film information.
 * Make scene note editing inline rather than via a separate page.
