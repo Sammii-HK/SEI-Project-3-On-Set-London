@@ -1,6 +1,6 @@
 # On Set London – SEI Project 3
 
-The aim was to build a full-stack application with a React front-end and noSQL database. The application had to include data schema and a RESTful api framework.
+A full-stack application with a React front-end and noSQL database using MongoDB. The application includes data schemas and a RESTful API framework. The app also utilises OpenCage to retrieve location co-ordinates.
 
 ## Details
 
@@ -22,7 +22,7 @@ The aim was to build a full-stack application with a React front-end and noSQL d
 * GitHub
 * React Select
 * ReactMapBox-GL
-* OpenCageData - location lookup
+* OpenCage
 
 ### App Overview
 
@@ -178,7 +178,7 @@ Media queries are used to adjust the experience.
 
 ### Challenges & Achievements
 
-Having to apply form data input to search the OpenCageData API locations, to return lat and long co-ordinates for location name supplied. Once co-ordinates are retrieved, they are amended to the location form data on state and submitted to our API.
+Having to apply form data input to search the OpenCageData API locations, to return lat and long co-ordinates for the location name supplied. Once co-ordinates have been retrieved, they are amended to the location form data on state and submitted to our API.
 
 ## Future enhancements
 
