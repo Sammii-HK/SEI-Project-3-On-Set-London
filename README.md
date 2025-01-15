@@ -1,4 +1,6 @@
-# On Set London – SEI Project 3
+# On Set London
+
+NB: This project is now archived and unmaintained.
 
 A full-stack application which indexes film set locations, with a React front-end and noSQL database using MongoDB. The application includes data schemas and a RESTful API framework. The app also utilises OpenCage to retrieve location co-ordinates.
 
